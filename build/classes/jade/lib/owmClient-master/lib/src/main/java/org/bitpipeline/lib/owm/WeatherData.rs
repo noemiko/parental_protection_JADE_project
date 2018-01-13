@@ -1,0 +1,11 @@
+org.bitpipeline.lib.owm.WeatherData$Clouds$CloudDescription$SkyCondition
+org.bitpipeline.lib.owm.WeatherData$WeatherCondition$ConditionCode
+org.bitpipeline.lib.owm.WeatherData$Clouds$CloudDescription
+org.bitpipeline.lib.owm.WeatherData
+org.bitpipeline.lib.owm.WeatherData$Main
+org.bitpipeline.lib.owm.WeatherData$TimedDetails
+org.bitpipeline.lib.owm.WeatherData$Precipitation
+org.bitpipeline.lib.owm.WeatherData$Wind
+org.bitpipeline.lib.owm.WeatherData$Clouds
+org.bitpipeline.lib.owm.WeatherData$WeatherCondition
+org.bitpipeline.lib.owm.WeatherData$Clouds$CloudDescription$Cumulus

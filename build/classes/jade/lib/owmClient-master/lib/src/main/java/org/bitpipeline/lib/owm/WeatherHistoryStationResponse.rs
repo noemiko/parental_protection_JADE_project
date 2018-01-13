@@ -1,0 +1,1 @@
+org.bitpipeline.lib.owm.WeatherHistoryStationResponse
