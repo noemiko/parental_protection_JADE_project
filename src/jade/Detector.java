@@ -2,6 +2,8 @@ package jade;
 import jade.core.Agent;
 import jade.core.behaviours.CyclicBehaviour;
 import jade.lang.acl.ACLMessage;
+import jade.core.AID;
+
 
 public class Detector extends Agent {
     Browser detector;
@@ -41,6 +43,10 @@ public class Detector extends Agent {
                        reply.setLanguage("Polski");
                        reply.setContent(urls); 
                        send(reply); 
+                       
+                     wiadomosc();
+                       
+                       
                     }
                     catch(Exception ex) {
                     System.out.println(ex);  
@@ -61,5 +67,14 @@ public class Detector extends Agent {
         
         return detector.getForbiddenUrls(rules);
     }
-
+    
+    public void wiadomosc()
+    {
+                ACLMessage msg = new ACLMessage(ACLMessage.INFORM);
+                msg.addReceiver(new AID("Send", AID.ISLOCALNAME));
+                msg.setLanguage("Polski");
+                msg.setContent("wiadomość"); 
+                send(msg);
+                System.out.println();
+    }
 }

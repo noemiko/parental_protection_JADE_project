@@ -22,7 +22,7 @@ public class Browser
         return "";
     }
     
-    String yourChromePath = "C:/Users/Win/AppData/Local/Google/Chrome/User Data/Default/History";
+    String yourChromePath = "C:/Users/Damia/AppData/Local/Google/Chrome/User Data/Default/History";
 
     String query = generateSqlQuery(forbiddenWords);
     
