@@ -29,12 +29,9 @@ public class Send extends Agent {
         System.out.println("Nastepuje usuniecie -> " + getLocalName());
         // doDelete();
     }
-    
      public class MyCyclicBehaviour extends CyclicBehaviour {
                   
-
         public void action() {
-            
             
 ACLMessage msg = myAgent.receive(); 
                 if (msg != null) {
@@ -49,9 +46,7 @@ ACLMessage msg = myAgent.receive();
                     }
                      catch(Exception ex) {
                     System.out.println(ex);  
-                    }
-
-
+                     }
         
         }
       
